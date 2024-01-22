@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    margin: 0 auto;
+    width: 80vw;
+    gap: 10px;
+}
+.container>*{
+    flex-grow: 1;
+}
+.todo_container{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+.todo_container button{
+    padding: 2px;
+    font-size: 14px;
+}
+.todo_container>p{
+word-wrap: break-word;
+
+}
+.error{ 
+    font-size: 10px;
+    color: red;
+    font-weight: 400;
+}
+.btnContainer{
+    display: flex;
+    gap: 5px;
+}
+.todoContainer{
+    border: 1px solid gainsboro;
+    padding: 10px;
+}
