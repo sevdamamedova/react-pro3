@@ -7,5 +7,7 @@ import './index.css'
 const reactRootElement = ReactDOM.createRoot(document.getElementById('root'))
 
 reactRootElement.render(
-  <App/>
+  <React.StrictMode>
+           <App/> 
+  </React.StrictMode>
 )
