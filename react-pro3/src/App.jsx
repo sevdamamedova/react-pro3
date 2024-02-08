@@ -1,21 +1,17 @@
 import React, { useState } from 'react'
 import './App.css'
+import Contacts from './components/Contacts'
 // import Counter from './components/Counter'
 // import ToDo from './components/ToDo'
-import Users from './components/Users'
+// import Users from './components/Users'
 
 function App() {
-  const [show, setShow] = useState(false)
   return (
     <>
      {/* <Counter/> */}
      {/* <ToDo/> */}
-     <button onClick={() => setShow((pre) => !pre)}>show/hide users</button>
-     {
-
-       show && <Users/>
-     }
-    
+    {/* <Users/> */}
+    <Contacts/>
     </>
   )
   
