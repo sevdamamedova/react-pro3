@@ -110,7 +110,7 @@ const Contacts = () => {
   return (
     <>
       <form onSubmit={onSubmit}>
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+        <input type="text" value={name} onChange={setName} />
         <button>İletişim ekle</button>
       </form>
       {contacts.map(({ id, name }) => (

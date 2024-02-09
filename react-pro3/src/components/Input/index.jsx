@@ -17,7 +17,33 @@ const Input = ({type = "text", placeholder ='', onChange, value , onEnter}) => {
        placeholder={placeholder}   
        type={type}
        value={value}
-       onChange={onChange}
+       onChange={({target}) => onChange(target.value)}
+    />
+    </>
+  )
+}
+
+
+export const TextArea = ({type = "text", placeholder ='', onChange, value , onEnter}) => {
+    
+  return (
+    <> 
+       <textarea
+       style={{
+        resize:'none'
+       }}
+       className={styles.input}
+       onKeyDown={(e) =>{
+        if(e.code === 'Enter'){
+          onEnter()
+        }
+       }
+
+       }
+       placeholder={placeholder}   
+       type={type}
+       value={value}
+       onChange={(e) => onChange(e.target.value)}
     />
     </>
   )
