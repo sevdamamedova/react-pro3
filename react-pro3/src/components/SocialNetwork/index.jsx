@@ -3,6 +3,7 @@ import Button from '../Button'
 import styles from './index.module.css'
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import Post from '../Post'
 
 const _url = 'https://65c46cc2dae2304e92e2935c.mockapi.io/posts'
 
@@ -52,16 +53,7 @@ const SocialNetwork = () => {
        </div>
        <div className={styles.postsCantainer}>
             {
-                posts.map((post) =>{
-                    return (
-                        <React.Fragment key={post.id}> 
-                            <h4>{post.title}</h4>
-                            <p>{post.description}</p>
-                            <button onClick={() => onDelete(post.id)}>x</button>
-                            <hr/>
-                        </React.Fragment>
-                    )
-                })
+                posts.map((post) => <Post key={post.id} post={post} onDelete={onDelete}/>)
             }
        </div>
     </>
