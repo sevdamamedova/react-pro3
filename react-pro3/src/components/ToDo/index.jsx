@@ -2,11 +2,13 @@ import Button from "../Button";
 import styles from "./index.module.css"
 import Input from "../Input";
 import { useState } from "react"
+import { useNavigate } from "react-router-dom";
 
 const ToDo = () => {
     const [error, setError] = useState('')
     const [value, setValue] = useState('')
     const [todos, setTodos] = useState([])
+    const navigate = useNavigate()
 
     const onEdit = (_todoName) =>{
         let newTodos = todos.map((todoName) =>{
@@ -35,6 +37,7 @@ const ToDo = () => {
         }
             setTodos([...todos, value])
             setValue('')
+            navigate("/contacts")
     }
 
     return(
