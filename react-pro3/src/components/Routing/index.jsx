@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router'
 import Contacts from '../Contacts'
 import SocialNetwork from '../SocialNetwork'
 import ToDo from '../ToDo'
+import { SingleContact } from '../Contacts'
+
 
 const WebRouting = () => {
   return (
@@ -14,7 +16,7 @@ const WebRouting = () => {
        <Route path='/contacts' element={<Contacts/>}>
        <Route path='test' element={<div>outlet inside contacts </div>}/>
        </Route>
-       {/* <Route path='contacts/:id/:name' element={<SingleContact/>}/> */}
+       <Route path='contacts/:id' element={<SingleContact/>}/>
        <Route path='/social' element={<SocialNetwork/>}/>
        <Route path='/todo' element={<ToDo/>}/>
     </Routes>

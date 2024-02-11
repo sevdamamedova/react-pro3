@@ -15,15 +15,6 @@ function App() {
   )
   
 }
-// function SingleContact(){
-//   const o = useParams()
-//   console.log(o)
-//   return(
-//     <div>im single contacts
-//       <h1>My name is {o.id}, im at {o.name} </h1>
-//     </div>
-    
-//   )
-// }
+
 
 export default App
