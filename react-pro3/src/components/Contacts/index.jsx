@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Outlet } from 'react-router'
 import { useParams } from 'react-router'
+import PageContainer from '../PageContainer'
 const _url = 'https://65c46cc2dae2304e92e2935c.mockapi.io/posts'
 
 const getContacts = async (_setContacts) => {
@@ -38,7 +39,7 @@ const Contacts = () => {
       })
     }
   return (
-    <>
+    <PageContainer>
     <Outlet/>
     <form onSubmit={onSubmit}>
        <input type='text' value={name} onChange={(e) => setName(e.target.value)} />
@@ -58,7 +59,7 @@ const Contacts = () => {
       })  
     }
     
-    </>
+    </PageContainer>
   )
 }
 export function SingleContact(){
