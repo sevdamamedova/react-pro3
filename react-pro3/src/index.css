@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,24 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+.mode-container{
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
+.darkModeContainer{
+    background-color: black !important;
+    color: white !important;
+}
+.darkModeContainer *{
+  background-color: inherit !important; 
+  color: inherit !important;
+  /* inherit miras almaq */
+}
+
+body{
+  margin: 0;
 }
