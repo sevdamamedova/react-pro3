@@ -72,17 +72,49 @@ button:focus-visible {
   padding: 20px;
 }
 
+.mode-container * {
+  background-color: inherit !important; 
+  color: inherit !important;
+}
+
 
 .darkModeContainer{
     background-color: black !important;
     color: white !important;
 }
-.darkModeContainer *{
-  background-color: inherit !important; 
-  color: inherit !important;
-  /* inherit miras almaq */
-}
 
 body{
   margin: 0;
+}
+.many-mode-button{
+  width: 50px;
+  height: 20px;
+  border: 2px solid grey;
+}
+
+.lightModeContainer{
+  background-color: white !important;
+  color: rgb(20, 19, 19) !important;
+}
+
+
+.greenModeContainer{
+  background-color: green !important;
+  color: white !important;
+}
+
+
+.purpleModeContainer{
+  background-color: purple !important;
+  color: white !important;
+}
+
+
+.pinkModeContainer{
+  background-color: pink !important;
+  color: white !important;
+}
+
+.pinkBtn{
+  background-color: red !important;
 }
