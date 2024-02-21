@@ -12,7 +12,7 @@ import ManyModeContextProvider from './context-api/ManyModeContext';
 const reactRootElement = ReactDOM.createRoot(document.getElementById('root'))
 
 reactRootElement.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <AuthContextProvider>
       {/* <ModeContextProvider> */}
         <ManyModeContextProvider>
@@ -22,7 +22,7 @@ reactRootElement.render(
         </ManyModeContextProvider>
       {/* </ModeContextProvider> */}
     </AuthContextProvider>       
-  </React.StrictMode>
+  // </React.StrictMode>
 )
 
 

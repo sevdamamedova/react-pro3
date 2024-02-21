@@ -8,6 +8,7 @@ import {SingleContact} from '../Contacts'
 // import NotFound from '../../pages/NotFound'
 // import SocialNetwork from '../SocialNetwork'
 // import Home from '../../pages/Home'
+// import UsersWithReducer from '../../pages/UsersWithReducer'
 
 
 
@@ -20,6 +21,8 @@ import {SingleContact} from '../Contacts'
  const Home = lazy(() => import('../../pages/Home'))
  const About = lazy(() => import('../../pages/About'))
  const NotFound = lazy(() => import('../../pages/NotFound'))
+ const UsersWithReducer = lazy(() => import('../../pages/UsersWithReducer'))
+ 
 
 
 
@@ -35,6 +38,7 @@ const WebRouting = () => {
        </Route>
        <Route path='contacts/:id' element={<SingleContact />}/>
        <Route path='/social' element={<SocialNetwork />}/>
+       <Route path='/users-with-reducer' element={<UsersWithReducer/>}/>
        <Route path='/todo' element={<ToDo />}/>
        <Route path='*' element={<NotFound /> }/>
     </Routes>

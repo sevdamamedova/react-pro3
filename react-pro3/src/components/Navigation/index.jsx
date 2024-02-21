@@ -16,6 +16,7 @@ const Navigation = () => {
     <>
         <NavigationLink to='/' title='Home' color='blue'/>
         <NavigationLink to='/about' title='About'/>
+        <NavigationLink to='/users-with-reducer' title='Users WR'/>
         <NavigationLink to='/contacts' title='Contacts'/>
     </>
   )
