@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router'
 import Loading from '../Loading'
 import Contacts from '../Contacts'
 import {SingleContact} from '../Contacts'
+// import AlionFollowers from '../../pages/AlionFollowers'
 // import About from '../../pages/About'
 // import ToDo from '../ToDo'
 // import NotFound from '../../pages/NotFound'
@@ -22,6 +23,7 @@ import {SingleContact} from '../Contacts'
  const About = lazy(() => import('../../pages/About'))
  const NotFound = lazy(() => import('../../pages/NotFound'))
  const UsersWithReducer = lazy(() => import('../../pages/UsersWithReducer'))
+ const AlionFollowers = lazy(() => import('../../pages/AlionFollowers'))
  
 
 
@@ -38,6 +40,7 @@ const WebRouting = () => {
        </Route>
        <Route path='contacts/:id' element={<SingleContact />}/>
        <Route path='/social' element={<SocialNetwork />}/>
+       <Route path='/alion-followers' element={<AlionFollowers />}/>
        <Route path='/users-with-reducer' element={<UsersWithReducer/>}/>
        <Route path='/todo' element={<ToDo />}/>
        <Route path='*' element={<NotFound /> }/>
