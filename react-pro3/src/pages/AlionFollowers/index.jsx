@@ -10,9 +10,9 @@ const AlionFollowers = () => {
     useEffect(() =>{
         getFollowers().then((data) =>{
             dispatch({type: _action.get_followers, payload: data})
-        })
-        
+        })       
     },[])
+    
   return (
     <PageContainer>
             <h1> Wellocome to Alion's Followers pages</h1>

@@ -13,9 +13,11 @@ export const _action = {
 
 const alion_follower_reducer = (store, action) => {
     switch(action.type){
-        case _action:
+        case _action.get_followers:
             // const data = await getFollowers()
             return {...store, followers: action.payload}
+            default: 
+            return store;
     }
 
 }
