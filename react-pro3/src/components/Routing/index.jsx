@@ -24,6 +24,7 @@ import {SingleContact} from '../Contacts'
  const NotFound = lazy(() => import('../../pages/NotFound'))
  const UsersWithReducer = lazy(() => import('../../pages/UsersWithReducer'))
  const AlionFollowers = lazy(() => import('../../pages/AlionFollowers'))
+ const CounterR = lazy(() => import('../../pages/CounterR'))
  
 
 
@@ -43,6 +44,7 @@ const WebRouting = () => {
        <Route path='/alion-followers' element={<AlionFollowers />}/>
        <Route path='/users-with-reducer' element={<UsersWithReducer/>}/>
        <Route path='/todo' element={<ToDo />}/>
+       <Route path='/counter-redux' element={<CounterR />}/>
        <Route path='*' element={<NotFound /> }/>
     </Routes>
     </Suspense>
