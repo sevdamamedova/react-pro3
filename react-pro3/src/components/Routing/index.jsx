@@ -14,6 +14,8 @@ import {SingleContact} from '../Contacts'
 
 
 
+
+
  //lazy-loading
 
 //  const Contacts = lazy(() => import('../../components/Contact'))
@@ -23,8 +25,10 @@ import {SingleContact} from '../Contacts'
  const About = lazy(() => import('../../pages/About'))
  const NotFound = lazy(() => import('../../pages/NotFound'))
  const UsersWithReducer = lazy(() => import('../../pages/UsersWithReducer'))
+ const UsersWithRedux = lazy(() => import('../../pages/UsersWithRedux'))
  const AlionFollowers = lazy(() => import('../../pages/AlionFollowers'))
  const CounterR = lazy(() => import('../../pages/CounterR'))
+ 
  
 
 
@@ -43,6 +47,7 @@ const WebRouting = () => {
        <Route path='/social' element={<SocialNetwork />}/>
        <Route path='/alion-followers' element={<AlionFollowers />}/>
        <Route path='/users-with-reducer' element={<UsersWithReducer/>}/>
+       <Route path='/users-with-redux' element={<UsersWithRedux />}/>
        <Route path='/todo' element={<ToDo />}/>
        <Route path='/counter-redux' element={<CounterR />}/>
        <Route path='*' element={<NotFound /> }/>
