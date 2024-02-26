@@ -1,8 +1,9 @@
 import React, { Suspense, lazy } from 'react'
 import { Routes, Route } from 'react-router'
 import Loading from '../Loading'
-import Contacts from '../Contacts'
-import {SingleContact} from '../Contacts'
+// import Contacts from '../Contacts'
+// import {SingleContact} from '../Contacts'
+import Contacts from '../../pages/Contacts'
 // import AlionFollowers from '../../pages/AlionFollowers'
 // import About from '../../pages/About'
 // import ToDo from '../ToDo'
@@ -18,7 +19,7 @@ import {SingleContact} from '../Contacts'
 
  //lazy-loading
 
-//  const Contacts = lazy(() => import('../../components/Contact'))
+//  const Contacts = lazy(() => import('../../pages/Contacts'))
  const SocialNetwork = lazy(() => import('../../components/SocialNetwork'))
  const ToDo = lazy(() => import('../../components/ToDo'))
  const Home = lazy(() => import('../../pages/Home'))
@@ -43,7 +44,7 @@ const WebRouting = () => {
        <Route path='/contacts' element={<Contacts />}>
        <Route path='test' element={<div>outlet inside contacts </div>}/>
        </Route>
-       <Route path='contacts/:id' element={<SingleContact />}/>
+       {/* <Route path='contacts/:id' element={<SingleContact />}/> */}
        <Route path='/social' element={<SocialNetwork />}/>
        <Route path='/alion-followers' element={<AlionFollowers />}/>
        <Route path='/users-with-reducer' element={<UsersWithReducer/>}/>
