@@ -9,6 +9,7 @@ import ManyModeContextProvider from './context-api/ManyModeContext';
 import { createStore } from 'redux';
 import rootReducer from './Redux'
 import { Provider } from 'react-redux';
+import store from './redux-toolkit/store';
 
 
 
@@ -17,7 +18,7 @@ import { Provider } from 'react-redux';
 
 const reactRootElement = ReactDOM.createRoot(document.getElementById('root'))
 
-const store = createStore(rootReducer)
+// const store = createStore(rootReducer)
 
 reactRootElement.render(
   // <React.StrictMode>
