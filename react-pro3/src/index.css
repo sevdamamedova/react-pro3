@@ -72,10 +72,10 @@ button:focus-visible {
   padding: 20px;
 }
 
-.mode-container * {
+/* .mode-container * {
   background-color: inherit !important; 
   color: inherit !important;
-}
+} */
 
 
 .darkModeContainer{
