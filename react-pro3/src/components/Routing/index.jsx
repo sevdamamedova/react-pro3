@@ -4,6 +4,8 @@ import Loading from '../Loading'
 // import Contacts from '../Contacts'
 import {SingleContact} from '../Contacts'
 import Contacts from '../../pages/Contacts'
+// import ToDos from '../../pages/ToDos'
+ 
 // import CounterRTK from '../../pages/CounterRTK'
 // import AlionFollowers from '../../pages/AlionFollowers'
 // import About from '../../pages/About'
@@ -20,9 +22,10 @@ import Contacts from '../../pages/Contacts'
 
  //lazy-loading
 
-//  const Contacts = lazy(() => import('../../pages/Contacts'))
+
  const SocialNetwork = lazy(() => import('../../components/SocialNetwork'))
  const ToDo = lazy(() => import('../../components/ToDo'))
+ const ToDos = lazy(() => import('../../pages/ToDos'))
  const Home = lazy(() => import('../../pages/Home'))
  const About = lazy(() => import('../../pages/About'))
  const NotFound = lazy(() => import('../../pages/NotFound'))
@@ -52,6 +55,7 @@ const WebRouting = () => {
        <Route path='/users-with-reducer' element={<UsersWithReducer/>}/>
        <Route path='/users-with-redux' element={<UsersWithRedux />}/>
        <Route path='/todo' element={<ToDo />}/>
+       <Route path='/todos' element={<ToDos />}/>
        <Route path='/counter-redux' element={<CounterR />}/>
        <Route path='/counter-redux-rtk' element={<CounterRTK />}/>
        <Route path='*' element={<NotFound /> }/>
