@@ -7,10 +7,14 @@
 .todo{
     flex-grow: 1;
     border: 1px solid;
-    max-width: 200px;
-    max-height: 200px;
-    padding: 30px;
+    max-height: 100px;
+    padding: 10px;
     margin: 10px;
+    user-select: none;
+}
+.todo:hover{
+    opacity: 0.85;
+    cursor: pointer;
 }
 
 p{

@@ -23,7 +23,10 @@ const ToDos = () => {
     {
         todos.map((todo) => {
             return(
-                <div style={{backgroundColor: todo.completed ? 'darkgreen' : 'darkred'}} className={style.todo} key={todo.id}>
+                <div 
+                onClick={() => dispatch(actions.toggleDone(todo.id))}
+                style={{backgroundColor: todo.completed ? 'darkgreen' : 'darkred'}} 
+                className={style.todo} key={todo.id}>
                     <p>{todo.todo}</p>
                     <button>{todo.completed ? 'chek' : 'X'}</button>
                 </div>
