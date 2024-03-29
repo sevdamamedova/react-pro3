@@ -19,6 +19,7 @@ const ToDos = () => {
   return (
     <>
     <h1>Welcome to todo page </h1>
+    <h1>hello</h1>
     <div className={style.todosContainer}>
     {
         todos.map((todo) => {
